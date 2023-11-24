@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import {Link} from 'react-router-dom'
 
 const Supply = () => {
 
@@ -30,6 +31,12 @@ const Supply = () => {
                     )
                 })}
             </div>
+        <button>
+            <Link to = "/Add">Add Supply</Link>
+        </button>
+        <button>
+            <Link to = "/Update">Update Supply</Link>
+        </button>
         </div>
     )
 }
